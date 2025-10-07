@@ -949,7 +949,7 @@ span.call {
     }
 
     .role {
-      font-size: 2rem;
+      font-size: 4rem;
       color: black;
       margin-top: 0.2rem;
     }
@@ -957,7 +957,7 @@ span.call {
     /* Right side */
     .time {
       font-size: 0.95rem;
-      color: #64748b;
+      color: #465060;
       white-space: nowrap;
     }
 
@@ -1004,12 +1004,84 @@ span.call {
     /* Logo styling */
     .company-logo img {
       width: 100px;
-      height: 70px;
+      height: 73px;
       object-fit: contain;
       border-radius: 8px;
       border: 1px solid #e2e8f0;
       background: #fff;
     }
+
+    .custom-btn { display: inline-block; padding: 12px 24px; background: none; color: #fff; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; margin-right: 2px; /* space between buttons */ transition: background 0.3s; }
+    /* 12 */
+.btn-12{
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 165px;
+  height: 35px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(235, 148, 231);
+background: linear-gradient(0deg, rgb(164, 79, 213) 0%, rgb(201, 117, 214) 100%);
+  display: block;
+  position: absolute;
+  width: 165px;
+  height: 35px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
 
     /* Details */
     .experience-details {
